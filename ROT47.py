@@ -1,7 +1,9 @@
 '''
 A tool to apply the ROT47 caesar cipher
 '''
+# read in 'filename'
 filename = r'/home/kali/cybersploit2/custom_wordlist.txt'
+# mutate 'filename' and write the results to 'new_filename'
 new_filename = r'/home/kali/cybersploit2/custom_wordlist_modified.txt'
 decrypted_word = ''
 decrypted_word_list = []
