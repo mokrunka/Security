@@ -7,6 +7,7 @@ login_url = host + '/admin/login'
 username = 'admin'
 filename = '/root/blunder/password.lst'
 
+# create a list ('wordlist') using the readlines method
 with open(filename, 'r', encoding='8859') as f:
     wordlist = f.readlines()
     for i in range(len(wordlist)):
