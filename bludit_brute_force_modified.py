@@ -2,9 +2,11 @@
 import re
 import requests
 
+# machine we're attacking
 host = 'http://10.10.10.191'
 login_url = host + '/admin/login'
 username = 'admin'
+# location of the password file
 filename = '/root/blunder/password.lst'
 
 # create a list ('wordlist') using the readlines method
