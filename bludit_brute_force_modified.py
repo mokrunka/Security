@@ -18,7 +18,7 @@ with open(filename, 'r', encoding='8859') as f:
 
 # Generate 50 incorrect passwords (not necessary. probably.)
 for i in range(50):
-    wordlist.append('Password{i}'.format(i = i))
+    wordlist.append(f'Password{i}')
     print(wordlist)
 
 # Add the correct password to the end of the list (not really necessary in our use case)
@@ -50,6 +50,6 @@ for password in wordlist:
         if '/admin/dashboard' in login_result.headers['location']:
             print()
             print('SUCCESS: Password found!')
-            print('Use {u}:{p} to login.'.format(u = username, p = password))
+            print(f'Use {username}:{password} to login.')
             print()
             break
