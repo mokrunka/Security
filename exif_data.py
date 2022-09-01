@@ -116,4 +116,3 @@ for file in files:
 
 if output_choice == "1":
     sys.stdout.close()
-# os.chdir(cwd)
