@@ -3,7 +3,6 @@ import sys
 from PIL import Image
 from PIL.ExifTags import GPSTAGS, TAGS
 
-
 # Helper function
 def create_google_maps_url(gps_coords):
     # Exif data stores coordinates in degree/minutes/seconds format. To convert to decimal degrees.
@@ -15,7 +14,6 @@ def create_google_maps_url(gps_coords):
                                           float(gps_coords["lon"][2]), gps_coords["lon_ref"])
     # We return a search string which can be used in Google Maps
     return f"https://maps.google.com/?q={dec_deg_lat},{dec_deg_lon}"
-
 
 # Converting to decimal degrees for latitude and longitude is from degree/minutes/seconds format is the same for latitude and longitude. So we use DRY principles, and create a seperate function.
 def convert_decimal_degrees(degree, minutes, seconds, direction):
@@ -42,12 +40,6 @@ while True:
     except:
         print("You entered an invalid option, please try again.")
 
-# Add files to the folder ./images
-# We assign the cwd to a variable. We will refer to it to get the path to images.
-# cwd = os.getcwd()
-# # Change the current working directory to the one where you keep your images.
-# os.chdir(os.path.join(cwd, "images"))
-# # Get a list of all the files in the images directory.
 files = os.listdir()
 
 # Check if you have any files in the ./images folder.
