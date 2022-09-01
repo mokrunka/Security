@@ -1,18 +1,3 @@
-# Disclaimer: This script is for educational purposes only.
-# Do not use against any photos that you don't own or have authorization to test.
-
-# !/usr/bin/env python3
-
-# Please note:
-# This program is for .JPG and .TIFF format files. The program could be extended to support .HEIC, .PNG and other formats.
-# Installation and usage instructions:
-# 1. Install Pillow (Pillow will not work if you have PIL installed):
-# python3 -m pip install --upgrade pip
-# python3 -m pip install --upgrade Pillow
-# 2. Add .jpg images downloaded from Flickr to subfolder ./images from where the script is stored.
-# Try the following Flickr account: https://www.flickr.com/photos/194419969@N07/? (Please don't use other Flickr accounts).
-# Note most social media sites strip exif data from uploaded photos.
-
 import os
 import sys
 from PIL import Image
